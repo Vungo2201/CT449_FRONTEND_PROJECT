@@ -1,14 +1,14 @@
 <template>
-    <Form class="d-flex flex-column bg-white" @submit="submitAdmin" :validation-schema="adminFormSchema">
+    <Form class="d-flex flex-column bg-white" @submit="submitUser" :validation-schema="userFormSchema">
         <div class="mb-4 form-contain">
             <label class="form-label fs-5" for="Email">Email: </label>
-            <Field v-model="adminLocal.Email" type="text" name="Email" class="form-control" id="Email" />
+            <Field v-model="userLocal.Email" type="text" name="Email" class="form-control" id="Email" />
             <div class="input-line"></div>
             <ErrorMessage name="Email" class="error-feedback text-center"/>
         </div>
         <div class="mb-4 form-contain">
             <label class="form-label fs-5" for="password">Mật khẩu: </label>
-            <Field v-model="adminLocal.Password"   type="password" name="password" class="form-control" id="password" />
+            <Field v-model="userLocal.Password"   type="password" name="password" class="form-control" id="password" />
             <div class="input-line"></div>
             <ErrorMessage name="password" class="error-feedback text-center"/>
         </div>
@@ -28,11 +28,11 @@ export default {
         ErrorMessage
     },
     props: {
-        admin: { type: Object, required: true }
+        user: { type: Object, required: true }
     },
-    emits: ["submit:admin"],
+    emits: ["submit:user"],
     data() {
-        const adminFormSchema = yup.object().shape({
+        const userFormSchema = yup.object().shape({
             Email: yup
                 .string()
                 .required("Email là bắt buộc")
@@ -44,14 +44,14 @@ export default {
         });
         
         return {
-            adminLocal: this.admin,
-            adminFormSchema,
+            userLocal: this.user,
+            userFormSchema,
         }
     },
 
     methods: {
-        submitAdmin() {
-            this.$emit("submit:admin", this.adminLocal)
+        submitUser() {
+            this.$emit("submit:user", this.userLocal)
         }
     }
 }

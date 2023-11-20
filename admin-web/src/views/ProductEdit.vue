@@ -47,9 +47,11 @@ export default {
         async updateProduct(data) {
             try {
                 await ProductService.updateProduct(this.product._id,data);
-                this.message = "Hàng hóa được cập nhật thành công.";
+                alert(" Hàng hóa  đã được cập  nhật thành công");
+                this.$router.push({ name : "product"});
             } catch(error) {
                 console.log(error);
+                this.message = "Hàng hóa  cập nhật thất bại.";
             }
         },
     },

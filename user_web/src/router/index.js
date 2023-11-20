@@ -8,15 +8,9 @@ const routes = [
         component:() => import("@/views/Home.vue"),
     },
     {
-    path: "/",
+    path: "/product",
     name: "product",
     component: Product,
-    },
-    {
-        path: "/products",
-        name: "product.add",
-        component: () => import("@/views/ProductAdd.vue"),
-        props: true
     },
     {
         path: "/:pathMath(.*)*",
@@ -25,20 +19,32 @@ const routes = [
     },
     {
         path: "/products/:id",
-        name: "product.edit",
-        component: () => import("@/views/ProductEdit.vue"),
+        name: "product.detail",
+        component: () => import("@/views/ProductDetail.vue"),
         props: true 
     },
     {
-        path: "/admin",
-        name: "admin.login",
+        path: "/login",
+        name: "user.login",
         component: () => import("@/views/Login.vue"),
+        props: true 
+    },
+    {
+        path: "/signup",
+        name: "user.signup",
+        component: () => import("@/views/Signup.vue"),
         props: true 
     },
     {
         path: "/order",
         name: "order",
         component: () => import("@/views/Order.vue"),
+        props: true 
+    },
+    {
+        path: "/cart",
+        name: "cart",
+        component: () => import("@/views/Cart.vue"),
         props: true 
     },
 ];

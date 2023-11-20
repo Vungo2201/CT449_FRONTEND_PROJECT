@@ -1,24 +1,16 @@
 <template>
-    <!-- Remove the container if you want to extend the Footer to full width. -->
 <div class="container my-5">
-
-<!-- Footer -->
 <footer
         class="text-center text-lg-start text-white"
         style="background-color: #1c2331"
-        >
-  <!-- Section: Social media -->
+>
   <section
            class="d-flex justify-content-between p-4"
            style="background-color: #6351ce"
            >
-    <!-- Left -->
     <div class="me-5">
-      <span>Get connected with us on social networks:</span>
+      <span>Kết nối với chúng tôi thông qua các mạng xã hội:</span>
     </div>
-    <!-- Left -->
-
-    <!-- Right -->
     <div>
       <a href="" class="text-white me-4">
         <i class="fab fa-facebook-f"></i>
@@ -39,111 +31,85 @@
         <i class="fab fa-github"></i>
       </a>
     </div>
-    <!-- Right -->
   </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
   <section class="">
     <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
       <div class="row mt-3">
-        <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold">Company name</h6>
+          <h6 class="text-uppercase fw-bold">Cửa hàng sách</h6>
           <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
               style="width: 60px; background-color: #7c4dff; height: 2px"
               />
           <p>
-            Here you can use rows and columns to organize your footer
-            content. Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit.
+            Tại đây bạn có thể xem, lựa chọn và mua đa dạng loại sách với chất lượng dịch vụ tôt nhất.
           </p>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold">Products</h6>
+          <h6 class="text-uppercase fw-bold">Các loại sách</h6>
           <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
               style="width: 60px; background-color: #7c4dff; height: 2px"
               />
           <p>
-            <a href="#!" class="text-white">MDBootstrap</a>
+            Sách Kinh dị
           </p>
           <p>
-            <a href="#!" class="text-white">MDWordPress</a>
+            Sách Tình yêu
           </p>
           <p>
-            <a href="#!" class="text-white">BrandFlow</a>
+            Sách Triết học
           </p>
           <p>
-            <a href="#!" class="text-white">Bootstrap Angular</a>
+            Sách Đời sống
           </p>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold">Useful links</h6>
+          <h6 class="text-uppercase fw-bold">Liên kết hữu ít</h6>
           <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
               style="width: 60px; background-color: #7c4dff; height: 2px"
               />
           <p>
-            <a href="#!" class="text-white">Your Account</a>
+            <a href="/" class="text-white">Trang chủ</a>
           </p>
           <p>
-            <a href="#!" class="text-white">Become an Affiliate</a>
+            <a href="/product" class="text-white">Trang sản phẩm</a>
           </p>
           <p>
-            <a href="#!" class="text-white">Shipping Rates</a>
+            <a href="/login" class="text-white">Đăng nhập/Đăng xuất</a>
           </p>
           <p>
-            <a href="#!" class="text-white">Help</a>
+            <a href="/cart" class="text-white">Giỏ hàng</a>
+          </p>
+          <p>
+            <a href="/order" class="text-white">Đơn hàng</a>
           </p>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <h6 class="text-uppercase fw-bold">Liên hệ</h6>
           <hr
               class="mb-4 mt-0 d-inline-block mx-auto"
               style="width: 60px; background-color: #7c4dff; height: 2px"
               />
-          <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-          <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-          <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          <p><i class="fas fa-home mr-3"></i> Ninh kiều, Cần thơ</p>
+          <p><i class="fas fa-envelope mr-3"></i> Vu2201@gmail.com</p>
+          <p><i class="fas fa-phone mr-3"></i>0799835446</p>
+          <p><i class="fas fa-print mr-3"></i>0925389789</p>
         </div>
-        <!-- Grid column -->
       </div>
-      <!-- Grid row -->
     </div>
   </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
   <div
        class="text-center p-3"
        style="background-color: rgba(0, 0, 0, 0.2)"
        >
-    © 2020 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/"
-       >MDBootstrap.com</a
+    © 2023 Copyright:
+    <a class="text-white" href=""
+       >NgoVu_B2014722</a
       >
   </div>
-  <!-- Copyright -->
 </footer>
-<!-- Footer -->
-
 </div>
-<!-- End of .container -->
 </template>

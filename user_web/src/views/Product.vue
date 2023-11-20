@@ -1,5 +1,5 @@
 <template>
-    <div class="page row" v-if="statusLogin">
+    <main class="container">
         <div class="col-md-12">
             <InputSearch v-model="searchText" />
         </div>
@@ -18,21 +18,8 @@
                 />
                 <p v-else>Không có hàng hóa nào.</p>
             </div>
-
-            <div class="mt-3 row">
-                <button class="btn btn-sm btn-primary" @click="refreshList()">
-                    <i class="fas fa-redo"></i> Làm mới
-                </button>
-                &emsp;
-                <button class="btn btn-sm btn-success" @click="goToAddProduct">
-                    <i class="fas fa-plus"></i> Thêm mới
-                </button>
-            </div>
         </div>
-    </div>
-    <div v-else>
-        <h3 style="color: #3d49a9;">Vui lòng đăng nhập để quản lý hàng hóa</h3>
-    </div>
+    </main>
 </template>
 <script>
 import InputSearch from "@/components/InputSearch.vue";
@@ -102,9 +89,3 @@ export default {
 };
 </script>
 
-<style scoped>
-    .page {
-        text-align: left;
-        max-width: 90%;
-    }
-</style>

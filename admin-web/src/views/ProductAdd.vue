@@ -28,9 +28,11 @@
             async postproduct(data) {
                 try{
                     await ProductService.createProduct(data);
-                    this.message = " Hàng hóa mới đã được thêm thành công";
+                    alert(" Hàng hóa mới đã được thêm thành công");
+                    this.$router.push({ name : "product"});
                 }catch(error){
                     console.log(error);
+                    this.message = " Hàng hóa mới thêm vào thất bại ";
                 }
             }
         },

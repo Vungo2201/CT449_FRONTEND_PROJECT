@@ -1,10 +1,10 @@
 <template>
     <div class="container">
         <div v-if = "statusLogin">
-            <h3 style="color: #3d49a9;">Trang đơn hàng của người dùng</h3>
+            <h3 style="color: #3d49a9;">Trang giỏ hàng của người dùng</h3>
         </div>
         <div v-else>
-           {{ this.$router.push({ name : "user.login"}) }}
+           {{ this.$router.push({ name : "user.login" }) }}
         </div>
     </div>
 </template>

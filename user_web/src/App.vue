@@ -1,19 +1,20 @@
 <script>
 import AppHeader from "@/components/AppHeader.vue";
+import AppFooter from "@/components/AppFooter.vue";
 
 export default {
   components: {
     AppHeader,
+    AppFooter
   },
 };
 </script>
 
 <template>
   <div id="app">
-    <div class="row">
-      <div class="col-2"><AppHeader /></div>
-      <div class="col-10"><router-view /></div>
-    </div>
+      <div class=""><AppHeader /></div>
+      <div class=""><router-view /></div>
+      <div class=""><AppFooter /></div>
   </div>
 </template>
 

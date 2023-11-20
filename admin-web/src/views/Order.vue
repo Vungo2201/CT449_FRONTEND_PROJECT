@@ -2,8 +2,8 @@
     <div v-if = "statusLogin">
         <h3 style="color: #3d49a9;">Trang quản lý đơn hàng</h3>
     </div>
-  <div v-else>
-        <h3 style="color: #3d49a9;">Vui lòng đăng nhập để quản lý hàng hóa</h3>
+    <div v-else>
+        {{ this.$router.push({ name: "admin.login"}) }}
     </div>
 </template>
 <script>
