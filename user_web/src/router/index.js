@@ -3,6 +3,11 @@ import Product from "@/views/Product.vue";
 
 const routes = [
     {
+        path: "/",
+        name: "home",
+        component:() => import("@/views/Home.vue"),
+    },
+    {
     path: "/",
     name: "product",
     component: Product,
